@@ -54,39 +54,39 @@ router.get("/events", (req, res) => {
     let events = [
         {
             _id: "1",
-            name: "Auto Expo",
+            name: "Auto Expo Hello",
             description: "lorem ipsum",
-            date: "2022-01-25T19:09:08.511Z",
+            date: new Date(),
         },
         {
             _id: "2",
             name: "Auto Expo",
             description: "lorem ipsum",
-            date: "2022-01-25T19:09:08.511Z",
+            date: new Date(),
         },
         {
             _id: "3",
             name: "Auto Expo",
             description: "lorem ipsum",
-            date: "2022-01-25T19:09:08.511Z",
+            date: new Date(),
         },
         {
             _id: "4",
             name: "Auto Expo",
             description: "lorem ipsum",
-            date: "2022-01-25T19:09:08.511Z",
+            date: new Date(),
         },
         {
             _id: "5",
             name: "Auto Expo",
             description: "lorem ipsum",
-            date: "2022-01-25T19:09:08.511Z",
+            date: new Date(),
         },
         {
             _id: "6",
             name: "Auto Expo",
             description: "lorem ipsum",
-            date: "2022-01-25T19:09:08.511Z",
+            date: new Date(),
         },
     ];
     res.json(events);
@@ -98,37 +98,37 @@ router.get("/special", (req, res) => {
             _id: "1",
             name: "Auto Expo",
             description: "lorem ipsum",
-            date: "2022-01-25T19:09:08.511Z",
+            date: new Date(),
         },
         {
             _id: "2",
             name: "Auto Expo",
             description: "lorem ipsum",
-            date: "2022-01-25T19:09:08.511Z",
+            date: new Date(),
         },
         {
             _id: "3",
             name: "Auto Expo",
             description: "lorem ipsum",
-            date: "2022-01-25T19:09:08.511Z",
+            date: new Date(),
         },
         {
             _id: "4",
             name: "Auto Expo",
             description: "lorem ipsum",
-            date: "2022-01-25T19:09:08.511Z",
+            date: new Date(),
         },
         {
             _id: "5",
             name: "Auto Expo",
             description: "lorem ipsum",
-            date: "2022-01-25T19:09:08.511Z",
+            date: new Date(),
         },
         {
             _id: "6",
             name: "Auto Expo",
             description: "lorem ipsum",
-            date: "2022-01-25T19:09:08.511Z",
+            date: new Date(),
         },
     ];
     res.json(events);
