@@ -1,4 +1,5 @@
 const express = require("express");
+const jwt = require("jsonwebtoken");
 const router = express.Router();
 
 const User = require("../models/user");
@@ -25,7 +26,9 @@ router.post("/register", (req, res) => {
         if (error) {
             console.log(error);
         } else {
-            res.status(200).send(registeredUser);
+            let payload = { subject: registeredUser._id };
+            let token = jwt.sign(payload, "secretkey");
+            res.status(200).send({ token });
         }
     });
 });
@@ -43,7 +46,9 @@ router.post("/login", (req, res) => {
             } else if (user.password !== userData.password) {
                 res.status(401).send("Invalid password");
             } else {
-                res.status(200).send(user);
+                let payload = { subject: user._id };
+                let token = jwt.sign(payload, "secretkey");
+                res.status(200).send({ token });
             }
         }
     });
