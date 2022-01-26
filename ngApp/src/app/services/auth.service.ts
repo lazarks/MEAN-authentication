@@ -15,6 +15,6 @@ export class AuthService {
   }
 
   login(user: any) {
-    return this.http.post(this._loginUrl, user);
+    return this.http.post<any>(this._loginUrl, user);
   }
 }
