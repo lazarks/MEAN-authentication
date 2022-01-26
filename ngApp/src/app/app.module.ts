@@ -5,10 +5,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { RegisterComponent } from './register/register.component';
-import { LoginComponent } from './login/login.component';
-import { EventsComponent } from './events/events.component';
-import { SpecialEventsComponent } from './special-events/special-events.component';
+import { RegisterComponent } from './components/register/register.component';
+import { LoginComponent } from './components/login/login.component';
+import { EventsComponent } from './components/events/events.component';
+import { SpecialEventsComponent } from './components/special-events/special-events.component';
 import { AuthService } from './services/auth.service';
 import { EventService } from './services/event.service';
 import { AuthGuard } from './guards/auth.guard';
